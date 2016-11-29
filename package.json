@@ -1,0 +1,24 @@
+{
+  "name": "platzigram",
+  "version": "0.1.0",
+  "description": "Aplicación social donde puedes compartir fotos con otros programadores y diseñadores estudiantes de Platzi.",
+  "main": "src/server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeissonvalde/platzigram.git"
+  },
+  "keywords": [
+    "javascript-definitivo",
+    "platzi",
+    "platzigram"
+  ],
+  "author": "Jeisson Valderrama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeissonvalde/platzigram/issues"
+  },
+  "homepage": "https://github.com/jeissonvalde/platzigram#readme"
+}
