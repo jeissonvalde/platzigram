@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "Aplicación social donde puedes compartir fotos con otros programadores y diseñadores estudiantes de Platzi.",
   "main": "src/server/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jeissonvalde/platzigram.git"
@@ -20,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/jeissonvalde/platzigram/issues"
   },
-  "homepage": "https://github.com/jeissonvalde/platzigram#readme"
+  "homepage": "https://github.com/jeissonvalde/platzigram#readme",
+  "dependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0"
+  }
 }
