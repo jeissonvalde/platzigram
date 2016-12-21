@@ -6421,12 +6421,67 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 
+.loader,
+.loader:before,
+.loader:after {
+  background: #125688;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em; }
+
+.loader {
+  color: #125688;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s; }
+
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: ''; }
+
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s; }
+
+.loader:after {
+  left: 1.5em; }
+
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em; }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em; } }
+
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em; }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em; } }
+
 body {
   background: #fafafa;
   color: #125688;
   font-family: Montserrat; }
 
-#main-container {
+.landing {
   margin: 30px auto; }
 
 .iphone {
@@ -6444,9 +6499,10 @@ body {
   padding: 10px 0;
   text-align: center; }
 
-.signup-box .platzigram {
+.platzigram {
   font-family: 'Oleo Script';
-  font-size: 42px; }
+  font-size: 42px;
+  color: #125688 !important; }
 
 .signup-form {
   width: 65%;
@@ -6465,3 +6521,131 @@ body {
 
 .signup-form .btn.btn-signup, .signup-form .btn-signup.btn-large {
   background-color: #125688; }
+
+.header {
+  background-color: white;
+  color: #125688;
+  box-shadow: none;
+  border-bottom: 1px solid #edeeee; }
+
+.timeline {
+  padding: 30px 0; }
+
+.card .card-title {
+  color: #125688 !important; }
+
+.card a {
+  color: #125688 !important; }
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+  float: left; }
+
+.card small.time {
+  color: #4c4c4c;
+  line-height: 12px;
+  padding: 20px 0; }
+
+.card p {
+  padding: 20px 0; }
+
+.card .likes {
+  line-height: 25px;
+  margin-left: 12px; }
+
+.card i.comments {
+  line-height: 25px;
+  margin-left: 20px; }
+
+.card .comments {
+  line-height: 5px;
+  margin-left: 12px; }
+
+.card i {
+  font-size: 25px;
+  cursor: pointer; }
+
+.card .fa-heart-o {
+  color: #125688; }
+
+.card .fa-heart {
+  color: #f85032;
+  display: none; }
+
+.card.liked .fa-heart {
+  display: block; }
+
+.card.liked .fa-heart-o {
+  display: none; }
+
+.card .card-reveal {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.81) !important; }
+
+.card .card-reveal .fa-times-circle {
+  color: #c5b0b0 !important; }
+
+.card .card-reveal a {
+  color: #c5b0b0 !important; }
+
+.form-upload span, .form-upload button {
+  color: white; }
+
+.form-upload .fileUpload {
+  position: relative;
+  overflow: hidder;
+  margin: 10px; }
+  .form-upload .fileUpload input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0); }
+
+.picture-container {
+  width: 100%;
+  margin: 10 auto; }
+
+.picture {
+  border-radius: 3%;
+  max-width: 100%; }
+
+.modal img {
+  max-height: 100%;
+  max-width: 90%; }
+
+.modal .fa-heart {
+  display: inline-block; }
+
+.like-heart-second {
+  font-size: 10em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  transition: all .1s ease;
+  opacity: 0; }
+  .like-heart-second.liked {
+    color: #f85032;
+    font-size: 12em;
+    display: block;
+    transition: all .5s ease;
+    opacity: 1; }
+
+.camara-picture {
+  height: 260px;
+  width: 440px; }
+
+.modal-camera {
+  padding: 0;
+  margin: 0 auto;
+  align-content: center; }

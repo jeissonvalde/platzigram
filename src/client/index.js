@@ -1,7 +1,15 @@
-var page = require('page')
-var yo = require('yo-yo')
+require('babel-polyfill');
+var page = require('page');
+var moment = require('moment');
 
-require('homepage')
-require('signup')
+require('moment/locale/es');
+
+moment.locale('es');
+
+require('./homepage');
+require('./signup');
+require('./signin');
+require('./user');
+require('./footer');
 
 page();

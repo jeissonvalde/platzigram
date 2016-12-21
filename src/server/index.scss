@@ -1,6 +1,9 @@
 $secondary-color: #125688;
+$avatar-size: 48px;
+$platzigram-red: #f85032;
 
 @import "../../node_modules/materialize-css/sass/materialize.scss";
+@import "./loader";
 
 body {
   background: #fafafa;
@@ -8,7 +11,7 @@ body {
   font-family: Montserrat;
 }
 
-#main-container {
+.landing {
   margin: 30px auto;
 }
 
@@ -30,9 +33,10 @@ body {
   text-align: center;
 }
 
-.signup-box .platzigram {
+.platzigram {
   font-family: 'Oleo Script';
   font-size: 42px;
+  color: $secondary-color !important;
 }
 
 .signup-form {
@@ -57,4 +61,173 @@ body {
 
 .signup-form .btn.btn-signup {
   background-color: #125688;
+}
+
+.header {
+  background-color: white;
+  color: $secondary-color;
+  box-shadow: none;
+  border-bottom: 1px solid #edeeee;
+}
+
+.timeline {
+  padding: 30px 0;
+}
+
+
+.card .card-title {
+  color: $secondary-color !important;
+}
+
+.card a {
+  color: $secondary-color !important;
+}
+
+.avatar {
+  width: $avatar-size;
+  height: $avatar-size;
+  border-radius: 50%;
+  margin-right: 12px;
+  float: left;
+}
+
+.card small.time {
+  color: rgba(76,76,76,1);
+  line-height: 12px;
+  padding: 20px 0;
+}
+
+.card p {
+  padding: 20px 0;
+}
+
+.card .likes {
+  line-height: 25px;
+  margin-left: 12px;
+}
+
+.card i.comments {
+  line-height: 25px;
+  margin-left: 20px;
+}
+
+.card .comments {
+  line-height: 5px;
+  margin-left: 12px;
+}
+
+.card i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.card .fa-heart-o {
+  color: $secondary-color;
+}
+
+.card .fa-heart {
+  color: rgba(248,80,50,1);
+  display: none;
+}
+
+.card.liked {
+  .fa-heart {
+    display: block;
+  }
+
+  .fa-heart-o {
+    display: none;
+  }
+}
+
+.card .card-reveal {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.81) !important;
+  }
+
+.card .card-reveal .fa-times-circle {
+  color: #c5b0b0 !important;
+}
+
+.card .card-reveal a {
+  color: #c5b0b0 !important;
+}
+
+.form-upload {
+
+  span, button {
+    color: white;
+  }
+
+  .fileUpload {
+    position: relative;
+    overflow: hidder;
+    margin: 10px;
+
+
+    input {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      cursor: pointer;
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+  }
+}
+
+.picture-container {
+  width: 100%;
+  margin: 10 auto;
+}
+
+.picture {
+  border-radius: 3%;
+  max-width: 100%;
+}
+
+.modal {
+  img {
+    max-height: 100%;
+    max-width: 90%;
+  }
+
+  .fa-heart {
+    display: inline-block;
+  }
+
+}
+
+.like-heart-second {
+  font-size: 10em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  transition: all .1s ease;
+  opacity: 0;
+
+  &.liked {
+    color: $platzigram-red;
+    font-size: 12em;
+    display: block;
+    transition: all .5s ease;
+    opacity: 1;
+  }
+}
+
+.camara-picture {
+  height: 260px;
+  width: 440px;
+}
+
+.modal-camera {
+  padding: 0;
+  margin: 0 auto;
+  align-content: center;
 }

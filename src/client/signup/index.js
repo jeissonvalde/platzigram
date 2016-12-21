@@ -1,8 +1,11 @@
-var page = require('page')
-var empty = require('empty')
-var template = require('template')
+var page = require('page');
+var empty = require('empty-element');
+var template = require('./template');
+var title = require('title');
+var translate = require('../translate');
 
 page('/signup', (ctx, next) => {
-  var main = document.getElementById('main-container')
+  title(`${translate.message('signup.title')}`)
+  var main = document.getElementById('main-container');
   empty(main).appendChild(template);
 })
