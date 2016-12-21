@@ -1,0 +1,2 @@
+export AWS_ACCESS_KEY="p983ym29834283m834273y"
+export AWS_SECRET_KEY="p98df9f86f9sduhfoolks3m834273y"
