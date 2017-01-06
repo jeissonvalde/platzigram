@@ -6489,7 +6489,10 @@ body {
 
 .site-footer {
   text-transform: uppercase;
-  font-size: 12px; }
+  font-size: 12px;
+  vertical-align: bottom;
+  bottom: 0;
+  position: relative; }
 
 .login-box,
 .signup-box {
@@ -6538,8 +6541,8 @@ body {
   color: #125688 !important; }
 
 .avatar {
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-right: 12px;
   float: left; }
@@ -6590,6 +6593,13 @@ body {
 
 .card .card-reveal a {
   color: #c5b0b0 !important; }
+
+.card .card-reveal .avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 12px;
+  float: left; }
 
 .form-upload span, .form-upload button {
   color: white; }
