@@ -27,12 +27,13 @@ module.exports = function pictureCard(pic) {
       </p>
     </div>
     <div class="card-reveal">
-      <a href="/user/${picture.user.username}">
-        <img src="${picture.user.avatar}" class="avatar" />
-        ${picture.user.username} 
-      </a>
       <i class="fa fa-times-circle card-title right" aria-hidden="true"></i>
-      <p>${ translate.message('text.nocomments')}</p>
+      <p>
+        <a href="/user/${picture.user.username}">
+          <img src="${picture.user.avatar}" class="avatar" />
+          ${picture.user.username} 
+        </a><br>
+        ${ translate.message('text.nocomments')} hola hola hola hola texto texto texto</p>
     </div>
   </div>`
   }

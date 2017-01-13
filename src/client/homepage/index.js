@@ -124,8 +124,8 @@ function loading(ctx, next) {
   el.classList.add('loader');
   document.getElementById('main-container').appendChild(el);
   setTimeout(function wait() {
-    next();
-  }, 2000);
+    console.log('listo...')
+  }, 30000);
 }
 
 /* ASÍ SE VERÍAN LOS CALLBACKS CON AXIOS

@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "gulp",
-    "serve": "PATH_NODE=. babel-node src/server --presets es2015",
+    "serve": "node src/server",
     "start": "gulp watch & npm run serve"
   },
   "keywords": [
