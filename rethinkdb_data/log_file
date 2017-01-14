@@ -1,0 +1,95 @@
+2017-01-12T23:57:02.211536810 0.524623s notice: Recursively removing directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/tmp
+2017-01-12T23:57:02.260703206 0.573788s notice: Initializing directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-12T23:57:02.268906369 0.581992s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/rr1n/javascript-cursos/platzigram/rethinkdb_data' did not already exist or is empty.)
+2017-01-12T23:57:02.269008584 0.582094s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-12T23:57:02.271693544 0.584781s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-12T23:57:02.271760190 0.584845s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-12T23:57:02.900390041 1.213475s info: Automatically using cache size of 1905 MB
+2017-01-12T23:57:02.911104956 1.224190s notice: Listening for intracluster connections on port 29015
+2017-01-12T23:57:02.953237892 1.266323s notice: Listening for client driver connections on port 28015
+2017-01-12T23:57:02.953368410 1.266454s notice: Listening for administrative HTTP connections on port 8080
+2017-01-12T23:57:02.953375031 1.266460s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-12T23:57:02.953377858 1.266463s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-12T23:57:02.953381478 1.266466s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-12T23:57:02.953383581 1.266469s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-12T23:57:02.953386824 1.266472s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-13T00:07:03.370175975 601.683262s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-13T00:07:03.370398996 601.683485s notice: Shutting down client connections...
+2017-01-13T00:07:03.370668339 601.683754s notice: All client connections closed.
+2017-01-13T00:07:03.370675801 601.683761s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-13T00:07:03.409719991 601.722806s notice: Storage engine shut down.
+2017-01-13T00:07:06.050803752 0.368130s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-13T00:07:06.053907962 0.371237s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-13T00:07:06.054007232 0.371333s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-13T00:07:06.127049299 0.444376s info: Automatically using cache size of 2070 MB
+2017-01-13T00:07:06.127455220 0.444781s notice: Listening for intracluster connections on port 29015
+2017-01-13T00:07:06.128376315 0.445703s notice: Listening for client driver connections on port 28015
+2017-01-13T00:07:06.128512212 0.445838s notice: Listening for administrative HTTP connections on port 8080
+2017-01-13T00:07:06.128514407 0.445840s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T00:07:06.128518148 0.445844s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T00:07:06.128520622 0.445847s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T00:07:06.128524097 0.445850s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-13T00:07:06.128527138 0.445853s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-13T00:13:54.082334272 408.399661s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-13T00:13:54.082527192 408.399853s notice: Shutting down client connections...
+2017-01-13T00:13:54.082641434 408.399968s notice: All client connections closed.
+2017-01-13T00:13:54.082648919 408.399975s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-13T00:13:54.082914932 408.400241s notice: Storage engine shut down.
+2017-01-13T00:32:45.263550469 0.335885s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-13T00:32:45.267556694 0.339894s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-13T00:32:45.267671242 0.340005s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-13T00:32:45.350189577 0.422524s info: Automatically using cache size of 2012 MB
+2017-01-13T00:32:45.350599326 0.422933s notice: Listening for intracluster connections on port 29015
+2017-01-13T00:32:45.351472301 0.423806s notice: Listening for client driver connections on port 28015
+2017-01-13T00:32:45.351600374 0.423934s notice: Listening for administrative HTTP connections on port 8080
+2017-01-13T00:32:45.351603875 0.423938s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T00:32:45.351606831 0.423941s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T00:32:45.351609752 0.423943s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T00:32:45.351611224 0.423945s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-13T00:32:45.351614304 0.423948s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-13T00:34:23.210991605 98.283326s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Starting a new Raft election for term 1.
+2017-01-13T00:34:23.211230474 98.283564s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Added replica on this server.
+2017-01-13T00:34:23.322060138 98.394394s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-13T00:35:59.025339941 194.097674s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-13T00:35:59.025414796 194.097749s notice: Shutting down client connections...
+2017-01-13T00:35:59.025559908 194.097894s notice: All client connections closed.
+2017-01-13T00:35:59.025564810 194.097898s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-13T00:35:59.039140038 194.111474s notice: Storage engine shut down.
+2017-01-13T19:04:58.514883721 1.229451s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-13T19:04:58.517181879 1.231750s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-13T19:04:58.517239429 1.231806s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-13T19:04:58.761040616 1.475608s info: Automatically using cache size of 2616 MB
+2017-01-13T19:04:58.762052867 1.476620s notice: Listening for intracluster connections on port 29015
+2017-01-13T19:04:59.107906760 1.822474s notice: Listening for client driver connections on port 28015
+2017-01-13T19:04:59.108099927 1.822667s notice: Listening for administrative HTTP connections on port 8080
+2017-01-13T19:04:59.108102744 1.822669s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T19:04:59.108121326 1.822688s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T19:04:59.108123321 1.822690s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T19:04:59.108125265 1.822692s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-13T19:04:59.108127158 1.822694s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-13T19:05:00.947724849 3.662292s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Starting a new Raft election for term 2.
+2017-01-13T19:05:01.014990590 3.729558s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 2. Latest log index is 2.
+2017-01-13T19:26:15.958527849 1278.673095s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-13T19:26:15.958887383 1278.673455s notice: Shutting down client connections...
+2017-01-13T19:26:15.959072680 1278.673640s notice: All client connections closed.
+2017-01-13T19:26:15.959080096 1278.673647s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-13T19:26:15.980520975 1278.695088s notice: Storage engine shut down.
+2017-01-13T20:14:42.493816336 5.891893s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-13T20:14:42.496150773 5.894229s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-13T20:14:42.496214122 5.894290s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-13T20:14:42.571688302 5.969765s info: Automatically using cache size of 2208 MB
+2017-01-13T20:14:42.572603660 5.970680s notice: Listening for intracluster connections on port 29015
+2017-01-13T20:14:42.610645587 6.008722s notice: Listening for client driver connections on port 28015
+2017-01-13T20:14:42.611018200 6.009095s notice: Listening for administrative HTTP connections on port 8080
+2017-01-13T20:14:42.611023290 6.009099s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T20:14:42.611025513 6.009102s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T20:14:42.611027521 6.009104s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T20:14:42.611042589 6.009119s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-13T20:14:42.611044730 6.009121s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-13T20:14:43.989207542 7.387284s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Starting a new Raft election for term 3.
+2017-01-13T20:14:44.034961704 7.433038s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 3. Latest log index is 5.
+2017-01-13T20:45:03.423193908 1826.821271s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-13T20:45:03.423448179 1826.821525s notice: Shutting down client connections...
+2017-01-13T20:45:03.423883718 1826.821960s notice: All client connections closed.
+2017-01-13T20:45:03.423991841 1826.822068s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-13T20:45:03.428092797 1826.826169s notice: Storage engine shut down.

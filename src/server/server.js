@@ -2,7 +2,22 @@ import http from 'http'
 import express from 'express'
 import multer from 'multer'
 import ext from 'file-extension'
+import cookieParser from 'cookie-parser'
+import bodyParser from 'body-parser'
+import expressSession from 'express-session'
+import config from './config'
+import passport from 'passport'
+import auth from './auth'
+import platzigram from 'platzigram-client'
 
+// Build app
+const app = express()
+// const server = http.createServer(app)
+const port = process.env.PORT || 3000
+// Estanciar platzigram-client
+const client = platzigram.createClient(config.client)
+
+// Almacenamiento de imagenes
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, './uploads')
@@ -14,14 +29,25 @@ var storage = multer.diskStorage({
 
 var upload = multer({ storage: storage }).single('picture');
 
-// Build app
-const app = express()
-// const server = http.createServer(app)
-const port = process.env.PORT || 3000
+// Definición de middlewares para Passport en local
+app.set(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(cookieParser())
+app.use(expressSession({
+  secret: config.secret,
+  resave: false,
+  saveUninitialized: false
+}))
+app.use(passport.initialize())
+app.use(passport.session())
 
-app.set('view engine', 'pug');
+app.set('view engine', 'pug')
 
 app.use(express.static('public'))
+
+passport.use(auth.localStrategy)
+passport.deserializeUser(auth.deserializeUser)
+passport.serializeUser(auth.serializeUser)
 
 app.get('/', (req, res) => {
   res.render('index', { title: 'Platzigram' })
@@ -31,9 +57,31 @@ app.get('/signup', (req, res) => {
   res.render('index', { title: 'Registro en Platzigram' })
 })
 
+app.post('/signup', (req, res) => {
+  var user = req.body;
+  client.saveUser(user, (err, usr) => {
+    if (err) return res.status(500).send(err.message)
+
+    res.redirect('/signin')
+  })
+})
+
 app.get('/signin', (req, res) => {
   res.render('index', { title: 'Entra a Platzigram' })
 })
+
+app.post('/login', passport.authenticate('local', {
+  successRedirect: '/',
+  failureRedirect: '/signin'
+}))
+
+function ensureAuth (req, res, next) {
+  if (req.isAuthenticated()) {
+    return next()
+  }
+
+  res.status(401).send({ error: 'not authenticated' })
+}
 
 app.get('/api/pictures', (req, res) => {
   var pictures = [
@@ -67,7 +115,7 @@ app.get('/api/pictures', (req, res) => {
   }, 1000) */
 })
 
-app.post('/api/pictures', function (req, res) {
+app.post('/api/pictures', ensureAuth, function (req, res) {
   upload(req, res, function (err) {
     if (err) {
       return res.send(500, "Error uploading file");
