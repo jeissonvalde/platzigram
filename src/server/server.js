@@ -13,7 +13,7 @@ import platzigram from 'platzigram-client'
 // Build app
 const app = express()
 // const server = http.createServer(app)
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5050
 // Estanciar platzigram-client
 const client = platzigram.createClient(config.client)
 
@@ -46,6 +46,7 @@ app.set('view engine', 'pug')
 app.use(express.static('public'))
 
 passport.use(auth.localStrategy)
+passport.use(auth.facebookStrategy)
 passport.deserializeUser(auth.deserializeUser)
 passport.serializeUser(auth.serializeUser)
 
@@ -71,6 +72,13 @@ app.get('/signin', (req, res) => {
 })
 
 app.post('/login', passport.authenticate('local', {
+  successRedirect: '/',
+  failureRedirect: '/signin'
+}))
+
+app.get('/auth/facebook', passport.authenticate('facebook', { scope: 'email' }))
+
+app.get('/auth/facebook/callback', passport.authenticate('facebook', {
   successRedirect: '/',
   failureRedirect: '/signin'
 }))
@@ -176,3 +184,8 @@ app.get('/:username/:id', (req, res) => {
 })
 
 app.listen(port, () => console.log(`Listening on port ${port}`))
+
+/*
+    Hay un archivo de hosts que me permite configurar las ip locales con un dominio.
+    Este, está ubicado en la dirección: /etc/hosts
+*/

@@ -93,3 +93,371 @@
 2017-01-13T20:45:03.423883718 1826.821960s notice: All client connections closed.
 2017-01-13T20:45:03.423991841 1826.822068s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
 2017-01-13T20:45:03.428092797 1826.826169s notice: Storage engine shut down.
+2017-01-13T20:54:12.587398457 0.350718s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-13T20:54:12.590369533 0.353691s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-13T20:54:12.590471678 0.353791s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-13T20:54:12.657933535 0.421252s info: Automatically using cache size of 2053 MB
+2017-01-13T20:54:12.658617265 0.421936s notice: Listening for intracluster connections on port 29015
+2017-01-13T20:54:12.694071218 0.457390s notice: Listening for client driver connections on port 28015
+2017-01-13T20:54:12.694240119 0.457559s notice: Listening for administrative HTTP connections on port 8080
+2017-01-13T20:54:12.694253837 0.457573s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T20:54:12.694256654 0.457575s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T20:54:12.694258954 0.457578s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T20:54:12.694267835 0.457586s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-13T20:54:12.694270004 0.457589s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-13T20:54:14.657231812 2.420551s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Starting a new Raft election for term 4.
+2017-01-13T20:54:14.697678892 2.460998s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 4. Latest log index is 8.
+2017-01-13T20:54:56.105572000 43.868891s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Starting a new Raft election for term 1.
+2017-01-13T20:54:56.105663154 43.868982s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Added replica on this server.
+2017-01-13T20:54:56.157327220 43.920646s info: Table ea746e80-1d91-4885-9c73-ac9751358819: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-13T20:54:57.114948852 44.878268s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Configuration is changing.
+2017-01-13T20:54:57.225931424 44.989250s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Configuration is changing.
+2017-01-13T20:58:08.073099220 235.836419s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-13T20:58:08.073396890 235.836716s notice: Shutting down client connections...
+2017-01-13T20:58:08.074293819 235.837613s notice: All client connections closed.
+2017-01-13T20:58:08.074418127 235.837737s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-13T20:58:08.079402789 235.842722s notice: Storage engine shut down.
+2017-01-13T20:58:58.392515134 0.442180s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-13T20:58:58.394940405 0.444607s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-13T20:58:58.395409698 0.445075s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-13T20:58:58.473647155 0.523312s info: Automatically using cache size of 2090 MB
+2017-01-13T20:58:58.474280696 0.523946s notice: Listening for intracluster connections on port 29015
+2017-01-13T20:58:58.524158529 0.573824s notice: Listening for client driver connections on port 28015
+2017-01-13T20:58:58.524336392 0.574001s notice: Listening for administrative HTTP connections on port 8080
+2017-01-13T20:58:58.524340626 0.574005s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T20:58:58.524343345 0.574008s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T20:58:58.524480815 0.574146s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-13T20:58:58.524483758 0.574148s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-13T20:58:58.524487098 0.574152s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-13T20:58:59.883714568 1.933380s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Starting a new Raft election for term 5.
+2017-01-13T20:58:59.947728538 1.997394s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 5. Latest log index is 11.
+2017-01-13T20:59:00.422169923 2.471835s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Starting a new Raft election for term 2.
+2017-01-13T20:59:00.558662251 2.608327s info: Table ea746e80-1d91-4885-9c73-ac9751358819: This server is Raft leader for term 2. Latest log index is 5.
+2017-01-13T21:15:28.938868905 990.988535s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-13T21:15:28.939140324 990.988806s notice: Shutting down client connections...
+2017-01-13T21:15:28.940149629 990.989815s notice: All client connections closed.
+2017-01-13T21:15:28.940173951 990.989839s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-13T21:15:28.951655700 991.001321s notice: Storage engine shut down.
+2017-01-14T19:19:45.883790479 0.518688s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-14T19:19:45.912047337 0.546947s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-14T19:19:45.912132163 0.547029s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-14T19:19:46.218240915 0.853138s info: Automatically using cache size of 2646 MB
+2017-01-14T19:19:46.219538645 0.854436s notice: Listening for intracluster connections on port 29015
+2017-01-14T19:19:46.735590075 1.370487s notice: Listening for client driver connections on port 28015
+2017-01-14T19:19:46.735740999 1.370638s notice: Listening for administrative HTTP connections on port 8080
+2017-01-14T19:19:46.735743845 1.370641s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-14T19:19:46.735745625 1.370643s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-14T19:19:46.735747396 1.370644s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-14T19:19:46.735757046 1.370654s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-14T19:19:46.735759578 1.370657s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-14T19:19:47.834553067 2.469450s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Starting a new Raft election for term 6.
+2017-01-14T19:19:47.883551770 2.518449s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 6. Latest log index is 14.
+2017-01-14T19:19:47.981760675 2.616658s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Starting a new Raft election for term 3.
+2017-01-14T19:19:48.027982841 2.662880s info: Table ea746e80-1d91-4885-9c73-ac9751358819: This server is Raft leader for term 3. Latest log index is 9.
+2017-01-14T19:48:57.762984724 1752.397882s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-14T19:48:57.763165075 1752.398062s notice: Shutting down client connections...
+2017-01-14T19:48:57.763249397 1752.398147s notice: All client connections closed.
+2017-01-14T19:48:57.763288541 1752.398186s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-14T19:48:57.784226868 1752.419124s notice: Storage engine shut down.
+2017-01-14T23:45:06.687967009 0.394616s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-14T23:45:06.690240713 0.396892s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-14T23:45:06.690321457 0.396971s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-14T23:45:06.765971507 0.472621s info: Automatically using cache size of 1099 MB
+2017-01-14T23:45:06.766619041 0.473268s notice: Listening for intracluster connections on port 29015
+2017-01-14T23:45:06.838518949 0.545168s notice: Listening for client driver connections on port 28015
+2017-01-14T23:45:06.839008401 0.545658s notice: Listening for administrative HTTP connections on port 8080
+2017-01-14T23:45:06.839013213 0.545662s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-14T23:45:06.839015753 0.545665s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-14T23:45:06.839017909 0.545667s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-14T23:45:06.839020659 0.545670s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-14T23:45:06.839028586 0.545678s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-14T23:45:08.293969973 2.000620s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Starting a new Raft election for term 7.
+2017-01-14T23:45:08.325401463 2.032051s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Starting a new Raft election for term 4.
+2017-01-14T23:45:08.340187360 2.046837s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 7. Latest log index is 17.
+2017-01-14T23:45:08.395742542 2.102392s info: Table ea746e80-1d91-4885-9c73-ac9751358819: This server is Raft leader for term 4. Latest log index is 12.
+2017-01-15T00:37:02.874677656 3116.278614s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-15T00:37:02.875074756 3116.279010s notice: Shutting down client connections...
+2017-01-15T00:37:02.875751602 3116.279687s notice: All client connections closed.
+2017-01-15T00:37:02.875885728 3116.279821s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-15T00:37:02.895125460 3116.299061s notice: Storage engine shut down.
+2017-01-15T17:57:55.506718482 5.496132s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-15T17:57:55.516663235 5.506079s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-15T17:57:55.516720079 5.506134s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-15T17:57:55.808487699 5.797902s info: Automatically using cache size of 2404 MB
+2017-01-15T17:57:55.809632949 5.799047s notice: Listening for intracluster connections on port 29015
+2017-01-15T17:57:56.425496773 6.414911s notice: Listening for client driver connections on port 28015
+2017-01-15T17:57:56.425654914 6.415069s notice: Listening for administrative HTTP connections on port 8080
+2017-01-15T17:57:56.425657081 6.415071s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-15T17:57:56.425658627 6.415072s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-15T17:57:56.425666882 6.415081s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-15T17:57:56.425668360 6.415082s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-15T17:57:56.425669819 6.415083s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-15T17:57:57.636123616 7.625538s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Starting a new Raft election for term 8.
+2017-01-15T17:57:57.695741817 7.685156s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 8. Latest log index is 20.
+2017-01-15T17:57:57.876107241 7.865521s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Starting a new Raft election for term 5.
+2017-01-15T17:57:57.917989052 7.907403s info: Table ea746e80-1d91-4885-9c73-ac9751358819: This server is Raft leader for term 5. Latest log index is 15.
+2017-01-15T18:00:19.883223851 149.872638s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-15T18:00:19.883351147 149.872765s notice: Shutting down client connections...
+2017-01-15T18:00:19.883415888 149.872830s notice: All client connections closed.
+2017-01-15T18:00:19.883418847 149.872833s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-15T18:00:19.921026186 149.910440s notice: Storage engine shut down.
+2017-01-15T18:10:24.071343937 0.419874s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-15T18:10:24.075477205 0.424009s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-15T18:10:24.075550832 0.424080s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-15T18:10:24.155094052 0.503624s info: Automatically using cache size of 2262 MB
+2017-01-15T18:10:24.156373343 0.504903s notice: Listening for intracluster connections on port 29015
+2017-01-15T18:10:24.225544150 0.574074s notice: Listening for client driver connections on port 28015
+2017-01-15T18:10:24.225916635 0.574446s notice: Listening for administrative HTTP connections on port 8080
+2017-01-15T18:10:24.225918160 0.574448s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-15T18:10:24.225923423 0.574453s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-15T18:10:24.225924296 0.574454s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-15T18:10:24.225926545 0.574456s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-15T18:10:24.225927398 0.574457s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-15T18:10:25.533601279 1.882131s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Starting a new Raft election for term 9.
+2017-01-15T18:10:25.585126931 1.933657s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 9. Latest log index is 23.
+2017-01-15T18:10:25.737015680 2.085545s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Starting a new Raft election for term 6.
+2017-01-15T18:10:25.785093066 2.133623s info: Table ea746e80-1d91-4885-9c73-ac9751358819: This server is Raft leader for term 6. Latest log index is 18.
+2017-01-15T19:11:54.958635420 3691.307166s info: Table f9451e6d-5dab-43ae-b797-377f9fe51722: Starting a new Raft election for term 1.
+2017-01-15T19:11:54.959727694 3691.308258s info: Table f9451e6d-5dab-43ae-b797-377f9fe51722: Added replica on this server.
+2017-01-15T19:11:55.169792194 3691.518322s info: Table 278ac31a-0fc6-44cb-afc5-1cf11b9b0975: Starting a new Raft election for term 1.
+2017-01-15T19:11:55.347078286 3691.695608s info: Table 5e99662a-a9ec-40ef-881b-1b2071af1690: Starting a new Raft election for term 1.
+2017-01-15T19:11:55.531632081 3691.880162s info: Table 278ac31a-0fc6-44cb-afc5-1cf11b9b0975: Added replica on this server.
+2017-01-15T19:11:55.532133023 3691.880663s info: Table 5e99662a-a9ec-40ef-881b-1b2071af1690: Added replica on this server.
+2017-01-15T19:11:55.532164447 3691.880694s info: Table 1c3ec526-435e-4e0c-b97e-ed7e85bd6b63: Starting a new Raft election for term 1.
+2017-01-15T19:11:55.602228389 3691.950758s info: Table 4b1a8fb5-3f1b-4a99-a3cb-98d6aca54491: Starting a new Raft election for term 1.
+2017-01-15T19:11:55.624867619 3691.973397s info: Table d8f78813-0a4f-42cc-a9ab-4f87f0601f34: Starting a new Raft election for term 1.
+2017-01-15T19:11:55.674886536 3692.023416s info: Table 1c3ec526-435e-4e0c-b97e-ed7e85bd6b63: Added replica on this server.
+2017-01-15T19:11:55.675009819 3692.023540s info: Table 6919098b-a940-43db-bb66-ddb3872ce1b9: Starting a new Raft election for term 1.
+2017-01-15T19:11:55.675688594 3692.024218s info: Table 4b1a8fb5-3f1b-4a99-a3cb-98d6aca54491: Added replica on this server.
+2017-01-15T19:11:55.675955532 3692.024485s info: Table d8f78813-0a4f-42cc-a9ab-4f87f0601f34: Added replica on this server.
+2017-01-15T19:11:55.730419958 3692.078950s info: Table 6919098b-a940-43db-bb66-ddb3872ce1b9: Added replica on this server.
+2017-01-15T19:11:55.730550105 3692.079080s info: Table ab90d9b7-aafe-41d6-8ac4-92e5d28f9dc3: Starting a new Raft election for term 1.
+2017-01-15T19:11:55.731321517 3692.079851s info: Table ab90d9b7-aafe-41d6-8ac4-92e5d28f9dc3: Added replica on this server.
+2017-01-15T19:11:55.792929586 3692.141460s info: Table caa42040-e983-4894-8930-a288bc00d8b4: Starting a new Raft election for term 1.
+2017-01-15T19:11:55.793055293 3692.141585s info: Table caa42040-e983-4894-8930-a288bc00d8b4: Added replica on this server.
+2017-01-15T19:11:55.857094381 3692.205624s info: Table f9451e6d-5dab-43ae-b797-377f9fe51722: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:11:55.857153532 3692.205683s info: Table 278ac31a-0fc6-44cb-afc5-1cf11b9b0975: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:11:55.879861802 3692.228392s info: Table 5e99662a-a9ec-40ef-881b-1b2071af1690: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:11:55.879972764 3692.228503s info: Table 1c3ec526-435e-4e0c-b97e-ed7e85bd6b63: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:11:55.880089208 3692.228619s info: Table 4b1a8fb5-3f1b-4a99-a3cb-98d6aca54491: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:11:55.880286705 3692.228817s info: Table d8f78813-0a4f-42cc-a9ab-4f87f0601f34: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:11:55.880477753 3692.229008s info: Table 6919098b-a940-43db-bb66-ddb3872ce1b9: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:11:55.881263647 3692.229793s info: Table ab90d9b7-aafe-41d6-8ac4-92e5d28f9dc3: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:11:55.881386076 3692.229916s info: Table caa42040-e983-4894-8930-a288bc00d8b4: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:11:57.325365975 3693.673896s info: Table 278ac31a-0fc6-44cb-afc5-1cf11b9b0975: Configuration is changing.
+2017-01-15T19:11:57.382278065 3693.730808s info: Table 6919098b-a940-43db-bb66-ddb3872ce1b9: Configuration is changing.
+2017-01-15T19:11:57.581397829 3693.929928s info: Table 278ac31a-0fc6-44cb-afc5-1cf11b9b0975: Configuration is changing.
+2017-01-15T19:11:57.602829220 3693.951359s info: Table 6919098b-a940-43db-bb66-ddb3872ce1b9: Configuration is changing.
+2017-01-15T19:11:57.848332336 3694.196862s info: Table f9451e6d-5dab-43ae-b797-377f9fe51722: Configuration is changing.
+2017-01-15T19:11:58.272005895 3694.620536s info: Table 4b1a8fb5-3f1b-4a99-a3cb-98d6aca54491: Configuration is changing.
+2017-01-15T19:11:58.272723132 3694.621253s info: Table 5e99662a-a9ec-40ef-881b-1b2071af1690: Configuration is changing.
+2017-01-15T19:11:58.272897239 3694.621427s info: Table 1c3ec526-435e-4e0c-b97e-ed7e85bd6b63: Configuration is changing.
+2017-01-15T19:11:58.272934908 3694.621465s info: Table d8f78813-0a4f-42cc-a9ab-4f87f0601f34: Configuration is changing.
+2017-01-15T19:11:58.273162444 3694.621692s info: Table ab90d9b7-aafe-41d6-8ac4-92e5d28f9dc3: Configuration is changing.
+2017-01-15T19:11:58.681750086 3695.030280s info: Table caa42040-e983-4894-8930-a288bc00d8b4: Configuration is changing.
+2017-01-15T19:11:58.683713370 3695.032243s info: Table f9451e6d-5dab-43ae-b797-377f9fe51722: Configuration is changing.
+2017-01-15T19:12:00.499465242 3696.847995s info: Table 11997a5f-ed6e-46b5-a460-3f119369bfe8: Starting a new Raft election for term 1.
+2017-01-15T19:12:00.500131737 3696.848662s info: Table 11997a5f-ed6e-46b5-a460-3f119369bfe8: Added replica on this server.
+2017-01-15T19:12:02.043018410 3698.391548s info: Table c66c02a1-02d6-43bb-81e7-8e1cd68a20b6: Starting a new Raft election for term 1.
+2017-01-15T19:12:02.043133891 3698.391664s info: Table c66c02a1-02d6-43bb-81e7-8e1cd68a20b6: Added replica on this server.
+2017-01-15T19:12:02.113260943 3698.461791s info: Table 11997a5f-ed6e-46b5-a460-3f119369bfe8: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:12:02.115142480 3698.463672s info: Table 4b1a8fb5-3f1b-4a99-a3cb-98d6aca54491: Configuration is changing.
+2017-01-15T19:12:02.136023917 3698.484554s info: Table c66c02a1-02d6-43bb-81e7-8e1cd68a20b6: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:12:02.138158013 3698.486688s info: Table caa42040-e983-4894-8930-a288bc00d8b4: Configuration is changing.
+2017-01-15T19:12:02.138475622 3698.487005s info: Table d8f78813-0a4f-42cc-a9ab-4f87f0601f34: Configuration is changing.
+2017-01-15T19:12:02.139125739 3698.487655s info: Table ab90d9b7-aafe-41d6-8ac4-92e5d28f9dc3: Configuration is changing.
+2017-01-15T19:12:02.139411502 3698.487941s info: Table 5e99662a-a9ec-40ef-881b-1b2071af1690: Configuration is changing.
+2017-01-15T19:12:02.140127109 3698.488657s info: Table 1c3ec526-435e-4e0c-b97e-ed7e85bd6b63: Configuration is changing.
+2017-01-15T19:12:05.903745440 3702.252275s info: Table ae22854e-7930-40d4-9355-d27bef3a6da9: Starting a new Raft election for term 1.
+2017-01-15T19:12:05.904109396 3702.252639s info: Table ae22854e-7930-40d4-9355-d27bef3a6da9: Added replica on this server.
+2017-01-15T19:12:06.481765093 3702.830295s info: Table ae22854e-7930-40d4-9355-d27bef3a6da9: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:12:09.172564106 3705.521094s info: Table 39058e5e-e3de-4056-9105-9e11e16b0a13: Starting a new Raft election for term 1.
+2017-01-15T19:12:09.172734846 3705.521265s info: Table 39058e5e-e3de-4056-9105-9e11e16b0a13: Added replica on this server.
+2017-01-15T19:12:10.710012112 3707.058542s info: Table 11997a5f-ed6e-46b5-a460-3f119369bfe8: Configuration is changing.
+2017-01-15T19:12:11.588777254 3707.937307s info: Table 586cbbc2-83c0-4a99-9da8-55c6be0f6f86: Starting a new Raft election for term 1.
+2017-01-15T19:12:11.589013950 3707.937544s info: Table f4165cc2-102a-4c61-912a-8085d7ced876: Starting a new Raft election for term 1.
+2017-01-15T19:12:11.589319613 3707.937849s info: Table 586cbbc2-83c0-4a99-9da8-55c6be0f6f86: Added replica on this server.
+2017-01-15T19:12:11.589384203 3707.937914s info: Table f4165cc2-102a-4c61-912a-8085d7ced876: Added replica on this server.
+2017-01-15T19:12:11.671112552 3708.019642s info: Table 11f10b66-15ff-46c5-a574-74118d4dcb0e: Starting a new Raft election for term 1.
+2017-01-15T19:12:11.671339806 3708.019870s info: Table 11f10b66-15ff-46c5-a574-74118d4dcb0e: Added replica on this server.
+2017-01-15T19:12:11.699649024 3708.048179s info: Table 461d5cde-9246-4121-953b-e80da638ade2: Starting a new Raft election for term 1.
+2017-01-15T19:12:11.699914073 3708.048444s info: Table 461d5cde-9246-4121-953b-e80da638ade2: Added replica on this server.
+2017-01-15T19:12:11.789039109 3708.137569s info: Table 6955e386-7a65-4928-99fd-6b282650eeb3: Starting a new Raft election for term 1.
+2017-01-15T19:12:11.789199591 3708.137729s info: Table 6955e386-7a65-4928-99fd-6b282650eeb3: Added replica on this server.
+2017-01-15T19:12:11.914851799 3708.263382s info: Table 39058e5e-e3de-4056-9105-9e11e16b0a13: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:12:11.915098410 3708.263628s info: Table 586cbbc2-83c0-4a99-9da8-55c6be0f6f86: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:12:11.915170724 3708.263700s info: Table f4165cc2-102a-4c61-912a-8085d7ced876: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:12:11.915197235 3708.263727s info: Table 11f10b66-15ff-46c5-a574-74118d4dcb0e: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:12:11.915246790 3708.263776s info: Table 461d5cde-9246-4121-953b-e80da638ade2: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:12:11.915353551 3708.263883s info: Table 6955e386-7a65-4928-99fd-6b282650eeb3: This server is Raft leader for term 1. Latest log index is 0.
+2017-01-15T19:12:12.044307406 3708.392837s info: Table c66c02a1-02d6-43bb-81e7-8e1cd68a20b6: Configuration is changing.
+2017-01-15T19:12:15.161098008 3711.509628s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/11997a5f-ed6e-46b5-a460-3f119369bfe8
+2017-01-15T19:12:15.161105027 3711.509635s info: Table 11997a5f-ed6e-46b5-a460-3f119369bfe8: Deleted the table.
+2017-01-15T19:12:15.261217646 3711.609747s info: Table f4165cc2-102a-4c61-912a-8085d7ced876: Configuration is changing.
+2017-01-15T19:12:15.309314933 3711.657845s info: Table 11f10b66-15ff-46c5-a574-74118d4dcb0e: Configuration is changing.
+2017-01-15T19:12:15.309337556 3711.657867s info: Table 586cbbc2-83c0-4a99-9da8-55c6be0f6f86: Configuration is changing.
+2017-01-15T19:12:15.309351871 3711.657881s info: Table 461d5cde-9246-4121-953b-e80da638ade2: Configuration is changing.
+2017-01-15T19:12:15.309363563 3711.657893s info: Table 6955e386-7a65-4928-99fd-6b282650eeb3: Configuration is changing.
+2017-01-15T19:12:15.313971060 3711.662501s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/278ac31a-0fc6-44cb-afc5-1cf11b9b0975
+2017-01-15T19:12:15.313977512 3711.662507s info: Table 278ac31a-0fc6-44cb-afc5-1cf11b9b0975: Deleted the table.
+2017-01-15T19:12:15.905458663 3712.253988s info: Table ae22854e-7930-40d4-9355-d27bef3a6da9: Configuration is changing.
+2017-01-15T19:12:16.344171228 3712.692701s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/6919098b-a940-43db-bb66-ddb3872ce1b9
+2017-01-15T19:12:16.344176761 3712.692706s info: Table 6919098b-a940-43db-bb66-ddb3872ce1b9: Deleted the table.
+2017-01-15T19:12:16.958794981 3713.307326s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/c66c02a1-02d6-43bb-81e7-8e1cd68a20b6
+2017-01-15T19:12:16.958810848 3713.307340s info: Table c66c02a1-02d6-43bb-81e7-8e1cd68a20b6: Deleted the table.
+2017-01-15T19:12:18.360169927 3714.708700s info: Table 39058e5e-e3de-4056-9105-9e11e16b0a13: Configuration is changing.
+2017-01-15T19:12:18.999113852 3715.347644s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/5e99662a-a9ec-40ef-881b-1b2071af1690
+2017-01-15T19:12:18.999120997 3715.347650s info: Table 5e99662a-a9ec-40ef-881b-1b2071af1690: Deleted the table.
+2017-01-15T19:12:19.756964350 3716.105494s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/f4165cc2-102a-4c61-912a-8085d7ced876
+2017-01-15T19:12:19.756969427 3716.105499s info: Table f4165cc2-102a-4c61-912a-8085d7ced876: Deleted the table.
+2017-01-15T19:12:19.851266015 3716.199796s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/461d5cde-9246-4121-953b-e80da638ade2
+2017-01-15T19:12:19.851279221 3716.199809s info: Table 461d5cde-9246-4121-953b-e80da638ade2: Deleted the table.
+2017-01-15T19:12:20.040984111 3716.389514s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/6955e386-7a65-4928-99fd-6b282650eeb3
+2017-01-15T19:12:20.040989025 3716.389519s info: Table 6955e386-7a65-4928-99fd-6b282650eeb3: Deleted the table.
+2017-01-15T19:12:20.079143717 3716.427674s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/586cbbc2-83c0-4a99-9da8-55c6be0f6f86
+2017-01-15T19:12:20.079149894 3716.427679s info: Table 586cbbc2-83c0-4a99-9da8-55c6be0f6f86: Deleted the table.
+2017-01-15T19:12:20.185862901 3716.534393s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/d8f78813-0a4f-42cc-a9ab-4f87f0601f34
+2017-01-15T19:12:20.185868539 3716.534398s info: Table d8f78813-0a4f-42cc-a9ab-4f87f0601f34: Deleted the table.
+2017-01-15T19:12:20.315986432 3716.664517s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/ab90d9b7-aafe-41d6-8ac4-92e5d28f9dc3
+2017-01-15T19:12:20.315998054 3716.664528s info: Table ab90d9b7-aafe-41d6-8ac4-92e5d28f9dc3: Deleted the table.
+2017-01-15T19:12:20.316072048 3716.664602s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/caa42040-e983-4894-8930-a288bc00d8b4
+2017-01-15T19:12:20.316074522 3716.664604s info: Table caa42040-e983-4894-8930-a288bc00d8b4: Deleted the table.
+2017-01-15T19:12:20.675092976 3717.023623s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/ae22854e-7930-40d4-9355-d27bef3a6da9
+2017-01-15T19:12:20.675128794 3717.023658s info: Table ae22854e-7930-40d4-9355-d27bef3a6da9: Deleted the table.
+2017-01-15T19:12:20.819192529 3717.167722s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/f9451e6d-5dab-43ae-b797-377f9fe51722
+2017-01-15T19:12:20.819198783 3717.167728s info: Table f9451e6d-5dab-43ae-b797-377f9fe51722: Deleted the table.
+2017-01-15T19:12:21.295951408 3717.644482s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/39058e5e-e3de-4056-9105-9e11e16b0a13
+2017-01-15T19:12:21.295967927 3717.644498s info: Table 39058e5e-e3de-4056-9105-9e11e16b0a13: Deleted the table.
+2017-01-15T19:12:21.356381688 3717.704912s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/4b1a8fb5-3f1b-4a99-a3cb-98d6aca54491
+2017-01-15T19:12:21.356396312 3717.704926s info: Table 4b1a8fb5-3f1b-4a99-a3cb-98d6aca54491: Deleted the table.
+2017-01-15T19:12:22.687994934 3719.036525s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/11f10b66-15ff-46c5-a574-74118d4dcb0e
+2017-01-15T19:12:22.688006774 3719.036536s info: Table 11f10b66-15ff-46c5-a574-74118d4dcb0e: Deleted the table.
+2017-01-15T19:12:22.768727943 3719.117258s notice: Removing file /home/rr1n/javascript-cursos/platzigram/rethinkdb_data/1c3ec526-435e-4e0c-b97e-ed7e85bd6b63
+2017-01-15T19:12:22.768733062 3719.117263s info: Table 1c3ec526-435e-4e0c-b97e-ed7e85bd6b63: Deleted the table.
+2017-01-15T19:18:31.954696219 4088.303227s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-15T19:18:31.955146703 4088.303677s notice: Shutting down client connections...
+2017-01-15T19:18:31.955981564 4088.304512s notice: All client connections closed.
+2017-01-15T19:18:31.955999675 4088.304529s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-15T19:18:31.970827841 4088.319358s notice: Storage engine shut down.
+2017-01-15T19:34:42.579680168 0.385422s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-15T19:34:42.581909752 0.387653s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-15T19:34:42.581969518 0.387711s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-15T19:34:42.666967048 0.472709s info: Automatically using cache size of 2048 MB
+2017-01-15T19:34:42.667642723 0.473385s notice: Listening for intracluster connections on port 29015
+2017-01-15T19:34:42.730719042 0.536461s notice: Listening for client driver connections on port 28015
+2017-01-15T19:34:42.730823335 0.536565s notice: Listening for administrative HTTP connections on port 8080
+2017-01-15T19:34:42.730874648 0.536616s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-15T19:34:42.730876620 0.536618s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-15T19:34:42.730878436 0.536620s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-15T19:34:42.730880227 0.536622s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-15T19:34:42.730882242 0.536624s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-15T19:34:43.818973225 1.624715s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Starting a new Raft election for term 7.
+2017-01-15T19:34:43.874273538 1.680016s info: Table ea746e80-1d91-4885-9c73-ac9751358819: This server is Raft leader for term 7. Latest log index is 21.
+2017-01-15T19:34:44.356026628 2.161769s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Starting a new Raft election for term 10.
+2017-01-15T19:34:44.466485933 2.272228s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 10. Latest log index is 27.
+2017-01-15T19:46:08.137180945 685.942924s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-15T19:46:08.137389316 685.943132s notice: Shutting down client connections...
+2017-01-15T19:46:08.138279136 685.944022s notice: All client connections closed.
+2017-01-15T19:46:08.138299338 685.944041s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-15T19:46:08.144907446 685.950650s notice: Storage engine shut down.
+2017-01-15T19:47:59.709357709 0.435792s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-15T19:47:59.712644063 0.439081s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-15T19:47:59.712737373 0.439171s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-15T19:47:59.790990074 0.517424s info: Automatically using cache size of 1823 MB
+2017-01-15T19:47:59.791716509 0.518150s notice: Listening for intracluster connections on port 29015
+2017-01-15T19:47:59.848473163 0.574907s notice: Listening for client driver connections on port 28015
+2017-01-15T19:47:59.848655097 0.575089s notice: Listening for administrative HTTP connections on port 8080
+2017-01-15T19:47:59.848660264 0.575094s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-15T19:47:59.848662958 0.575097s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-15T19:47:59.848664923 0.575098s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-15T19:47:59.848672085 0.575106s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-15T19:47:59.848674791 0.575108s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-15T19:48:01.792676108 2.519110s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Starting a new Raft election for term 11.
+2017-01-15T19:48:01.793587043 2.520021s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Starting a new Raft election for term 8.
+2017-01-15T19:48:01.853739519 2.580173s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 11. Latest log index is 30.
+2017-01-15T19:48:01.875954000 2.602388s info: Table ea746e80-1d91-4885-9c73-ac9751358819: This server is Raft leader for term 8. Latest log index is 24.
+2017-01-15T19:51:54.992066501 235.718501s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-15T19:51:54.992262204 235.718696s notice: Shutting down client connections...
+2017-01-15T19:51:54.992535311 235.718969s notice: All client connections closed.
+2017-01-15T19:51:54.992540810 235.718974s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-15T19:51:54.994826700 235.721261s notice: Storage engine shut down.
+2017-01-15T20:15:11.292112986 0.464101s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-15T20:15:11.294539534 0.466529s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-15T20:15:11.294609656 0.466597s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-15T20:15:11.374507207 0.546495s info: Automatically using cache size of 1670 MB
+2017-01-15T20:15:11.374907255 0.546895s notice: Listening for intracluster connections on port 29015
+2017-01-15T20:15:11.434039519 0.606028s notice: Listening for client driver connections on port 28015
+2017-01-15T20:15:11.434278602 0.606266s notice: Listening for administrative HTTP connections on port 8080
+2017-01-15T20:15:11.434281616 0.606269s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-15T20:15:11.434284211 0.606272s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-15T20:15:11.434286770 0.606274s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-15T20:15:11.434426843 0.606414s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-15T20:15:11.434430280 0.606418s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-15T20:15:12.942304436 2.114292s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Starting a new Raft election for term 12.
+2017-01-15T20:15:12.993934924 2.165923s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 12. Latest log index is 33.
+2017-01-15T20:15:13.178428462 2.350416s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Starting a new Raft election for term 9.
+2017-01-15T20:15:13.313278955 2.485267s info: Table ea746e80-1d91-4885-9c73-ac9751358819: This server is Raft leader for term 9. Latest log index is 27.
+2017-01-15T20:16:51.306054330 100.478042s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Configuration is changing.
+2017-01-15T20:17:54.816007336 163.987995s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-15T20:17:54.816097560 163.988085s notice: Shutting down client connections...
+2017-01-15T20:17:54.816136903 163.988124s notice: All client connections closed.
+2017-01-15T20:17:54.816138527 163.988126s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-15T20:17:54.820778428 163.992767s notice: Storage engine shut down.
+2017-01-16T11:53:14.213852539 0.895641s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-16T11:53:14.230125889 0.911916s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-16T11:53:14.230201746 0.911990s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-16T11:53:14.526736487 1.208525s info: Automatically using cache size of 2139 MB
+2017-01-16T11:53:14.527861393 1.209650s notice: Listening for intracluster connections on port 29015
+2017-01-16T11:53:15.076940557 1.758729s notice: Listening for client driver connections on port 28015
+2017-01-16T11:53:15.077148139 1.758937s notice: Listening for administrative HTTP connections on port 8080
+2017-01-16T11:53:15.077151624 1.758940s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-16T11:53:15.077171446 1.758960s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-16T11:53:15.077173311 1.758961s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-16T11:53:15.077174955 1.758963s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-16T11:53:15.077176528 1.758965s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-16T11:53:16.662601646 3.344390s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Starting a new Raft election for term 13.
+2017-01-16T11:53:16.713000242 3.394789s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 13. Latest log index is 37.
+2017-01-16T11:53:16.788557264 3.470346s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Starting a new Raft election for term 10.
+2017-01-16T11:53:16.868506507 3.550295s info: Table ea746e80-1d91-4885-9c73-ac9751358819: This server is Raft leader for term 10. Latest log index is 30.
+2017-01-16T11:57:42.444854745 269.126643s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-16T11:57:42.444958043 269.126746s notice: Shutting down client connections...
+2017-01-16T11:57:42.500364016 269.182153s notice: All client connections closed.
+2017-01-16T11:57:42.500477874 269.182266s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-16T11:57:42.513473814 269.195262s notice: Storage engine shut down.
+2017-01-16T11:57:46.339766046 0.418053s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-16T11:57:46.341960585 0.420249s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-16T11:57:46.342309553 0.420596s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-16T11:57:46.421109525 0.499396s info: Automatically using cache size of 2040 MB
+2017-01-16T11:57:46.421586598 0.499873s notice: Listening for intracluster connections on port 29015
+2017-01-16T11:57:46.463423255 0.541710s notice: Listening for client driver connections on port 28015
+2017-01-16T11:57:46.463626718 0.541913s notice: Listening for administrative HTTP connections on port 8080
+2017-01-16T11:57:46.463648468 0.541935s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-16T11:57:46.463650512 0.541937s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-16T11:57:46.463652607 0.541939s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-16T11:57:46.463655221 0.541941s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-16T11:57:46.463656724 0.541943s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-16T11:57:47.691482858 1.769769s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Starting a new Raft election for term 11.
+2017-01-16T11:57:47.739811295 1.818098s info: Table ea746e80-1d91-4885-9c73-ac9751358819: This server is Raft leader for term 11. Latest log index is 33.
+2017-01-16T11:57:47.743687556 1.821974s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Starting a new Raft election for term 14.
+2017-01-16T11:57:47.817655816 1.895942s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 14. Latest log index is 40.
+2017-01-16T11:59:45.716116379 119.794403s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-16T11:59:45.716225747 119.794512s notice: Shutting down client connections...
+2017-01-16T11:59:45.716691502 119.794978s notice: All client connections closed.
+2017-01-16T11:59:45.716698050 119.794984s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-16T11:59:45.718777876 119.797064s notice: Storage engine shut down.
+2017-01-16T11:59:47.314464844 0.381473s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-16T11:59:47.317031661 0.384042s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-16T11:59:47.317213284 0.384221s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-16T11:59:47.392396777 0.459405s info: Automatically using cache size of 1827 MB
+2017-01-16T11:59:47.393104769 0.460113s notice: Listening for intracluster connections on port 29015
+2017-01-16T11:59:47.441381652 0.508390s notice: Listening for client driver connections on port 28015
+2017-01-16T11:59:47.442025278 0.509033s notice: Listening for administrative HTTP connections on port 8080
+2017-01-16T11:59:47.442029026 0.509037s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-16T11:59:47.442031941 0.509040s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-16T11:59:47.442035109 0.509043s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-16T11:59:47.442083058 0.509091s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-16T11:59:47.442086578 0.509094s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-16T11:59:48.979943212 2.046951s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Starting a new Raft election for term 15.
+2017-01-16T11:59:49.021912355 2.088920s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 15. Latest log index is 43.
+2017-01-16T11:59:49.258047128 2.325055s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Starting a new Raft election for term 12.
+2017-01-16T11:59:49.321925997 2.388934s info: Table ea746e80-1d91-4885-9c73-ac9751358819: This server is Raft leader for term 12. Latest log index is 36.
