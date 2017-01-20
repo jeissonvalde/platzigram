@@ -20,7 +20,7 @@ const client = platzigram.createClient(config.client)
 // Almacenamiento de imagenes
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, './uploads')
+    cb(null, './src/server/uploads')
   },
   filename: function (req, file, cb) {
     cb(null, + Date.now() + '.' + ext(file.originalname))
@@ -76,6 +76,12 @@ app.post('/login', passport.authenticate('local', {
   failureRedirect: '/signin'
 }))
 
+app.get('/logout', function logoutEP (req, res) {
+  req.logout();
+  req.session.destroy();
+  res.redirect('/');
+})
+
 app.get('/auth/facebook', passport.authenticate('facebook', { scope: 'email' }))
 
 app.get('/auth/facebook/callback', passport.authenticate('facebook', {
@@ -91,8 +97,16 @@ function ensureAuth (req, res, next) {
   res.status(401).send({ error: 'not authenticated' })
 }
 
-app.get('/api/pictures', (req, res) => {
-  var pictures = [
+app.get('/whoami', (req, res) => {
+  if (req.isAuthenticated()) {
+    return res.json(req.user)
+  }
+
+  res.json({ auth: false })
+})
+
+app.get('/api/pictures', (req, res, next) => {
+  /* var pictures = [
     {
       user: {
         username: 'JeissonValde',
@@ -115,21 +129,46 @@ app.get('/api/pictures', (req, res) => {
       liked: false,
       createdAt: new Date().setDate(new Date().getDate() - 10)
     }
-  ];
+  ]; */
 
-  res.send(pictures);
-  /* setTimeout(() => {
+  client.listPictures(function (err, pictures) {
+    if (err) return res.send([]) 
+
     res.send(pictures);
-  }, 1000) */
+    /* setTimeout(() => {
+      res.send(pictures);
+    }, 1000) */
+  })
 })
 
 app.post('/api/pictures', ensureAuth, function (req, res) {
   upload(req, res, function (err) {
     if (err) {
-      return res.send(500, "Error uploading file");
+      return res.send(500, `Error uploading file ${err.message}`)
+      console.log(err.message)
     }
+    
+    var user = req.user
+    var token = req.user.token
+    var username = req.user.username
+    var src = './src/server/uploads'
 
-    res.send('File uploaded');
+    client.savePicture({
+      src: src,
+      userId: username,
+      user: {
+        username: username,
+        avatar: user.avatar,
+        name: user.name
+      }
+    }, token, function (err, img) {
+      if (err) {
+        return res.status(500).send(err.message)
+        console.log(err.message)
+      }
+
+      res.send(`File uploaded successfull`)
+    })
   })
 })
 
@@ -175,11 +214,11 @@ app.get('/api/user/:username', (req, res) => {
   res.send(user)
 })
 
-app.get('/:username', (req, res) => {
+app.get('/user/:username', (req, res) => {
   res.render('index', { title: `${req.params.username} en Platzigram` })
 })
 
-app.get('/:username/:id', (req, res) => {
+app.get('/user/:username/:id', (req, res) => {
   res.render('index', { title: `${req.params.username} en Platzigram` })
 })
 

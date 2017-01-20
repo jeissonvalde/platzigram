@@ -24480,7 +24480,9 @@ document.body.appendChild(el);
 },{"../translate":381,"yo-yo":365}],368:[function(require,module,exports){
 'use strict';
 
-var _templateObject = _taggedTemplateLiteral(['<nav class="header">\n    <div class="nav-wrapper">\n      <div class="container">\n        <div class="row">\n          <div class="col s12 m6 offset-m1">\n            <a href="/" class="brand-logo platzigram">Platzigram</a>\n          </div>\n          <div class="col s2 m6 push-m10 push-s10">\n            <a href="#" class="btn btn-large btn-flat dropdown-button" data-activates="drop-user">\n              <i class="fa fa-user" aria-hidden="true"></i>\n            </a>\n            <ul id="drop-user" class="dropdown-content">\n              <li><a href="#">', '</a></li>\n            </ul>\n          </div>\n        </div>\n      </div>\n    </div>\n  </nav>'], ['<nav class="header">\n    <div class="nav-wrapper">\n      <div class="container">\n        <div class="row">\n          <div class="col s12 m6 offset-m1">\n            <a href="/" class="brand-logo platzigram">Platzigram</a>\n          </div>\n          <div class="col s2 m6 push-m10 push-s10">\n            <a href="#" class="btn btn-large btn-flat dropdown-button" data-activates="drop-user">\n              <i class="fa fa-user" aria-hidden="true"></i>\n            </a>\n            <ul id="drop-user" class="dropdown-content">\n              <li><a href="#">', '</a></li>\n            </ul>\n          </div>\n        </div>\n      </div>\n    </div>\n  </nav>']);
+var _templateObject = _taggedTemplateLiteral(['\n    <div class="col s2 m6 push-m10 push-s10">\n      <a href="#" class="btn btn-large btn-flat dropdown-button" data-activates="drop-user">\n        <i class="fa fa-user" aria-hidden="true"></i>\n        ', '\n      </a>\n      <ul id="drop-user" class="dropdown-content">\n        <li><a href="/logout">', '</a></li>\n      </ul>\n    </div>\n  '], ['\n    <div class="col s2 m6 push-m10 push-s10">\n      <a href="#" class="btn btn-large btn-flat dropdown-button" data-activates="drop-user">\n        <i class="fa fa-user" aria-hidden="true"></i>\n        ', '\n      </a>\n      <ul id="drop-user" class="dropdown-content">\n        <li><a href="/logout">', '</a></li>\n      </ul>\n    </div>\n  ']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    <div class="col s2 m6 push-m10 push-s10">\n      <a href="/signin" class="btn btn-large btn-flat">\n        ', '\n      </a>\n    </div>\n  '], ['\n    <div class="col s2 m6 push-m10 push-s10">\n      <a href="/signin" class="btn btn-large btn-flat">\n        ', '\n      </a>\n    </div>\n  ']),
+    _templateObject3 = _taggedTemplateLiteral(['<nav class="header">\n    <div class="nav-wrapper">\n      <div class="container">\n        <div class="row">\n          <div class="col s12 m6 offset-m1">\n            <a href="/" class="brand-logo platzigram">Platzigram</a>\n          </div>\n          ', '\n        </div>\n      </div>\n    </div>\n  </nav>'], ['<nav class="header">\n    <div class="nav-wrapper">\n      <div class="container">\n        <div class="row">\n          <div class="col s12 m6 offset-m1">\n            <a href="/" class="brand-logo platzigram">Platzigram</a>\n          </div>\n          ', '\n        </div>\n      </div>\n    </div>\n  </nav>']);
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -24488,11 +24490,27 @@ var yo = require('yo-yo');
 var translate = require('../translate');
 var empty = require('empty-element');
 
-var el = yo(_templateObject, translate.message('logout'));
+var authCard = function authCard(ctx) {
+
+  var authenticated = yo(_templateObject, ctx.auth.name, translate.message('logout'));
+
+  var signin = yo(_templateObject2, translate.message('signin'));
+
+  if (ctx.auth) {
+    return authenticated;
+  } else {
+    return signin;
+  }
+};
+
+var renderHeader = function renderHeader(ctx) {
+  return yo(_templateObject3, authCard(ctx));
+};
 
 module.exports = function header(ctx, next) {
   var container = document.getElementById('header-container');
-  empty(container).appendChild(el);
+  empty(container).appendChild(renderHeader(ctx));
+  $('.dropdown-button').dropdown();
   next();
 };
 
@@ -24508,8 +24526,9 @@ var header = require('../header');
 var axios = require('axios');
 var webcam = require('webcamjs');
 var picture = require('../picture-card');
+var utils = require('../utils');
 
-page('/', header, loading, asyncLoad, function (ctx, next) {
+page('/', utils.loadAuth, header, loading, loadPicturesAxios, function (ctx, next) {
   title('Platzigram');
   var main = document.getElementById('main-container');
 
@@ -24663,10 +24682,10 @@ function loadPicturesAxios(ctx, next) {
 }
 */
 
-},{"../header":368,"../picture-card":374,"./template":370,"axios":1,"empty-element":325,"page":355,"superagent":359,"title":363,"webcamjs":364}],370:[function(require,module,exports){
+},{"../header":368,"../picture-card":374,"../utils":384,"./template":370,"axios":1,"empty-element":325,"page":355,"superagent":359,"title":363,"webcamjs":364}],370:[function(require,module,exports){
 'use strict';
 
-var _templateObject = _taggedTemplateLiteral(['<div class="container timeline">\n  <div id="modalCamara" class="modal center-align modal-camera">\n    <div class="modal-content">\n      <div class="camara-picture" id="camara-input"></div>\n      <div class="camara-picture hide" id="picture-preview"></div>\n    </div>\n    <div class="modal-footer center">\n      <button class="waves-effect waves-light btn" id="shoot">\n        <i class="fa fa-camera"></i>\n      </button>\n      <button class="waves-effect waves-light cyan btn hide" id="uploadBtn">\n        <i class="fa fa-cloud-upload"></i>\n      </button>\n      <button class="waves-effect waves-light red btn hide" id="cancelPicture">\n        <i class="fa fa-times"></i>\n      </button>\n    </div>\n  </div>\n  <div class="row">\n    <div class="col s12 m10 offset-m1 center-align">\n      <form enctype="multipart/form-data" id="formUpload" class="form-upload" onsubmit=', '>\n        <a href="#modalCamara" class="waves-effect waves-light btn modal-trigger">\n          <i class="fa fa-camera-retro" aria-hidden="true"></i>\n        </a>\n        <div id="fileName" class="fileUpload btn btn-flat cyan">\n          <span><i class="fa fa-cloud-upload" aria-hidden="true"></i>\n            ', '</span>\n          <input name="picture" id="file" type="file" class="upload" onchange=', ' />\n        </div>\n        <button id="btnUpload" type="submit" class="btn btn-flat cyan hide">', '</button>\n        <button id="btnCancel" type="button" class="btn btn-flat red hide" onclick=', '><i class="fa fa-window-close" aria-hidden="true"></i></button>\n      </form>\n    </div>\n    <div class="col s12 m10 offset-m1 l6 offset-l3" id="picture-cards">\n      ', '\n    </div>\n  </div>\n</div>'], ['<div class="container timeline">\n  <div id="modalCamara" class="modal center-align modal-camera">\n    <div class="modal-content">\n      <div class="camara-picture" id="camara-input"></div>\n      <div class="camara-picture hide" id="picture-preview"></div>\n    </div>\n    <div class="modal-footer center">\n      <button class="waves-effect waves-light btn" id="shoot">\n        <i class="fa fa-camera"></i>\n      </button>\n      <button class="waves-effect waves-light cyan btn hide" id="uploadBtn">\n        <i class="fa fa-cloud-upload"></i>\n      </button>\n      <button class="waves-effect waves-light red btn hide" id="cancelPicture">\n        <i class="fa fa-times"></i>\n      </button>\n    </div>\n  </div>\n  <div class="row">\n    <div class="col s12 m10 offset-m1 center-align">\n      <form enctype="multipart/form-data" id="formUpload" class="form-upload" onsubmit=', '>\n        <a href="#modalCamara" class="waves-effect waves-light btn modal-trigger">\n          <i class="fa fa-camera-retro" aria-hidden="true"></i>\n        </a>\n        <div id="fileName" class="fileUpload btn btn-flat cyan">\n          <span><i class="fa fa-cloud-upload" aria-hidden="true"></i>\n            ', '</span>\n          <input name="picture" id="file" type="file" class="upload" onchange=', ' />\n        </div>\n        <button id="btnUpload" type="submit" class="btn btn-flat cyan hide">', '</button>\n        <button id="btnCancel" type="button" class="btn btn-flat red hide" onclick=', '><i class="fa fa-window-close" aria-hidden="true"></i></button>\n      </form>\n    </div>\n    <div class="col s12 m10 offset-m1 l6 offset-l3" id="picture-cards">\n      ', '\n    </div>\n  </div>\n</div>']);
+var _templateObject = _taggedTemplateLiteral(['\n    <div class="container timeline">\n      <div id="modalCamara" class="modal center-align modal-camera">\n        <div class="modal-content">\n          <div class="camara-picture" id="camara-input"></div>\n          <div class="camara-picture hide" id="picture-preview"></div>\n        </div>\n        <div class="modal-footer center">\n          <button class="waves-effect waves-light btn" id="shoot">\n            <i class="fa fa-camera"></i>\n          </button>\n          <button class="waves-effect waves-light cyan btn hide" id="uploadBtn">\n            <i class="fa fa-cloud-upload"></i>\n          </button>\n          <button class="waves-effect waves-light red btn hide" id="cancelPicture">\n            <i class="fa fa-times"></i>\n          </button>\n        </div>\n      </div>\n      <div class="row">\n        <div class="col s12 m10 offset-m1 center-align">\n          <form enctype="multipart/form-data" id="formUpload" class="form-upload" onsubmit=', '>\n            <a href="#modalCamara" class="waves-effect waves-light btn modal-trigger">\n              <i class="fa fa-camera-retro" aria-hidden="true"></i>\n            </a>\n            <div id="fileName" class="fileUpload btn btn-flat cyan">\n              <span><i class="fa fa-cloud-upload" aria-hidden="true"></i>\n                ', '</span>\n              <input name="picture" id="file" type="file" class="upload" onchange=', ' />\n            </div>\n            <button id="btnUpload" type="submit" class="btn btn-flat cyan hide">', '</button>\n            <button id="btnCancel" type="button" class="btn btn-flat red hide" onclick=', '><i class="fa fa-window-close" aria-hidden="true"></i></button>\n          </form>\n        </div>\n        <div class="col s12 m10 offset-m1 l6 offset-l3" id="picture-cards">\n          ', '\n        </div>\n      </div>\n    </div>\n  '], ['\n    <div class="container timeline">\n      <div id="modalCamara" class="modal center-align modal-camera">\n        <div class="modal-content">\n          <div class="camara-picture" id="camara-input"></div>\n          <div class="camara-picture hide" id="picture-preview"></div>\n        </div>\n        <div class="modal-footer center">\n          <button class="waves-effect waves-light btn" id="shoot">\n            <i class="fa fa-camera"></i>\n          </button>\n          <button class="waves-effect waves-light cyan btn hide" id="uploadBtn">\n            <i class="fa fa-cloud-upload"></i>\n          </button>\n          <button class="waves-effect waves-light red btn hide" id="cancelPicture">\n            <i class="fa fa-times"></i>\n          </button>\n        </div>\n      </div>\n      <div class="row">\n        <div class="col s12 m10 offset-m1 center-align">\n          <form enctype="multipart/form-data" id="formUpload" class="form-upload" onsubmit=', '>\n            <a href="#modalCamara" class="waves-effect waves-light btn modal-trigger">\n              <i class="fa fa-camera-retro" aria-hidden="true"></i>\n            </a>\n            <div id="fileName" class="fileUpload btn btn-flat cyan">\n              <span><i class="fa fa-cloud-upload" aria-hidden="true"></i>\n                ', '</span>\n              <input name="picture" id="file" type="file" class="upload" onchange=', ' />\n            </div>\n            <button id="btnUpload" type="submit" class="btn btn-flat cyan hide">', '</button>\n            <button id="btnCancel" type="button" class="btn btn-flat red hide" onclick=', '><i class="fa fa-window-close" aria-hidden="true"></i></button>\n          </form>\n        </div>\n        <div class="col s12 m10 offset-m1 l6 offset-l3" id="picture-cards">\n          ', '\n        </div>\n      </div>\n    </div>\n  ']);
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -24702,13 +24721,16 @@ module.exports = function (pictures) {
     var data = new FormData(this);
     request.post('/api/pictures').send(data).end(function (err, res) {
       console.log(arguments);
-      toggleButtons();
-      document.getElementById('formUpload').reset();
     });
   }
 
   return layout(el);
 };
+
+/* 
+toggleButtons();
+      document.getElementById('formUpload').reset();
+*/
 
 },{"../layout":373,"../picture-card":374,"../translate":381,"superagent":359,"yo-yo":365}],371:[function(require,module,exports){
 'use strict';
@@ -24771,7 +24793,7 @@ module.exports = function pictureCard(pic) {
   var el;
 
   function render(picture) {
-    return yo(_templateObject, picture.liked ? 'liked' : '', picture.url, like.bind(null, null, true), picture.likedHeart ? 'liked' : '', picture.user.username, picture.user.avatar, picture.user.username, translate.date.format(picture.createdAt), like.bind(null, true), like.bind(null, false), translate.message('likes', { likes: picture.likes }), translate.message('comments', { comments: picture.comments }), picture.user.username, picture.user.avatar, picture.user.username, translate.message('text.nocomments'));
+    return yo(_templateObject, picture.liked ? 'liked' : '', picture.src, like.bind(null, null, true), picture.likedHeart ? 'liked' : '', picture.username, picture.user.avatar, picture.user.name, translate.date.format(new Date(picture.createdAt).getTime()), like.bind(null, true), like.bind(null, false), translate.message('likes', { likes: picture.likes || 0 }), translate.message('comments', { comments: picture.comments || 0 }), picture.user.username, picture.user.avatar, picture.user.name, translate.message('text.nocomments'));
   }
 
   function like(L, dblclick) {
@@ -24985,16 +25007,20 @@ var _header = require('../header');
 
 var _header2 = _interopRequireDefault(_header);
 
+var _utils = require('../utils');
+
+var _utils2 = _interopRequireDefault(_utils);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _page2.default)('/:username', _header2.default, loadUser, function (ctx, next) {
+(0, _page2.default)('/:username', _utils2.default.loadAuth, _header2.default, loadUser, function (ctx, next) {
   (0, _title2.default)(_translate2.default.message('user.profile') + ' ' + ctx.user.username);
   var main = document.getElementById('main-container');
   (0, _emptyElement2.default)(main).appendChild((0, _template2.default)(ctx.user));
   $('.modal').modal();
 });
 
-(0, _page2.default)('/:username/:id', _header2.default, loadUser, function (ctx, next) {
+(0, _page2.default)('/:username/:id', _utils2.default.loadAuth, _header2.default, loadUser, function (ctx, next) {
   (0, _title2.default)(_translate2.default.message('user.profile') + ' ' + ctx.user.username);
   var main = document.getElementById('main-container');
   (0, _emptyElement2.default)(main).appendChild((0, _template2.default)(ctx.user));
@@ -25033,7 +25059,7 @@ function loadUser(ctx, next) {
   }, null, this, [[0, 7]]);
 }
 
-},{"../header":368,"../translate":381,"./template":383,"empty-element":325,"page":355,"title":363}],383:[function(require,module,exports){
+},{"../header":368,"../translate":381,"../utils":384,"./template":383,"empty-element":325,"page":355,"title":363}],383:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -25059,4 +25085,49 @@ function userPageTemplate(user) {
   return layout(el);
 }
 
-},{"../layout":373,"../translate":381,"yo-yo":365}]},{},[371]);
+},{"../layout":373,"../translate":381,"yo-yo":365}],384:[function(require,module,exports){
+'use strict';
+
+var axios = require('axios');
+
+function loadAuth(ctx, next) {
+  var whoami;
+  return regeneratorRuntime.async(function loadAuth$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          _context.prev = 0;
+          _context.next = 3;
+          return regeneratorRuntime.awrap(axios.get('/whoami').then(function (res) {
+            return res.data;
+          }));
+
+        case 3:
+          whoami = _context.sent;
+
+          if (whoami.username) {
+            ctx.auth = whoami;
+          } else {
+            ctx.auth = false;
+          }
+          next();
+          _context.next = 11;
+          break;
+
+        case 8:
+          _context.prev = 8;
+          _context.t0 = _context['catch'](0);
+
+          console.log(_context.t0);
+
+        case 11:
+        case 'end':
+          return _context.stop();
+      }
+    }
+  }, null, this, [[0, 8]]);
+}
+
+exports.loadAuth = loadAuth;
+
+},{"axios":1}]},{},[371]);

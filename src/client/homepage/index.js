@@ -7,8 +7,9 @@ var header = require('../header');
 var axios = require('axios');
 var webcam = require('webcamjs');
 var picture = require('../picture-card');
+var utils = require('../utils');
 
-page('/', header, loading, asyncLoad, function (ctx, next) {
+page('/', utils.loadAuth, header, loading, loadPicturesAxios, function (ctx, next) {
   title('Platzigram');
   var main = document.getElementById('main-container');
 

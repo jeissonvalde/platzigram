@@ -8,22 +8,22 @@ module.exports = function pictureCard(pic) {
   function render(picture) {
     return yo`<div class="card sticky-action ${picture.liked ? 'liked' : ''}">
     <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="${picture.url}" ondblclick=${like.bind(null, null, true)} >
+      <img class="activator" src="${picture.src}" ondblclick=${like.bind(null, null, true)} >
       <i class="fa fa-heart like-heart-second ${ picture.likedHeart ? 'liked' : '' }"></i>
     </div>
     <div class="card-content">
-      <a class="card-title" href="/${picture.user.username}">
+      <a class="card-title" href="/${picture.username}">
         <img src="${picture.user.avatar}" class="avatar" />
-        ${picture.user.username}
+        ${picture.user.name}
       </a>
-      <small class="right time">${translate.date.format(picture.createdAt)}</small>      
+      <small class="right time">${translate.date.format(new Date(picture.createdAt).getTime())}</small>      
       <p>
         <a href="#" class="left" onclick=${like.bind(null, true)}><i class="fa fa-heart-o" aria-hidden="true"></i></a>
         <a href="#" class="left" onclick=${like.bind(null, false)}><i class="fa fa-heart" aria-hidden="true"></i></a>
-        <span class="left likes">${translate.message('likes', { likes: picture.likes })}</span>
+        <span class="left likes">${translate.message('likes', { likes: picture.likes || 0 })}</span>
 
         <i class="fa fa-comments-o activator comments" aria-hidden="true"></i>
-        <span class="comments">${translate.message('comments', { comments: picture.comments })}</span>
+        <span class="comments">${translate.message('comments', { comments: picture.comments || 0 })}</span>
       </p>
     </div>
     <div class="card-reveal">
@@ -31,7 +31,7 @@ module.exports = function pictureCard(pic) {
       <p>
         <a href="/user/${picture.user.username}">
           <img src="${picture.user.avatar}" class="avatar" />
-          ${picture.user.username} 
+          ${picture.user.name} 
         </a><br>
         ${ translate.message('text.nocomments')} hola hola hola hola texto texto texto</p>
     </div>

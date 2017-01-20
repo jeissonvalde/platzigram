@@ -4,15 +4,16 @@ import template from './template'
 import title from 'title'
 import translate from '../translate'
 import header from '../header'
+import utils from '../utils'
 
-page('/:username', header, loadUser, function (ctx, next) {
+page('/:username', utils.loadAuth, header, loadUser, function (ctx, next) {
   title(`${ translate.message('user.profile')} ${ctx.user.username}`)
   var main = document.getElementById('main-container');
   empty(main).appendChild(template(ctx.user));
   $('.modal').modal();
 })
 
-page('/:username/:id', header, loadUser, function (ctx, next) {
+page('/:username/:id', utils.loadAuth, header, loadUser, function (ctx, next) {
   title(`${ translate.message('user.profile')} ${ctx.user.username}`)
   var main = document.getElementById('main-container');
   empty(main).appendChild(template(ctx.user));
