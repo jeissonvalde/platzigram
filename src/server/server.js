@@ -76,6 +76,12 @@ app.post('/login', passport.authenticate('local', {
   failureRedirect: '/signin'
 }))
 
+app.get('/logout', (req, res) => {
+  req.logOut()
+
+  res.redirect('/')
+})
+
 app.get('/auth/facebook', passport.authenticate('facebook', { scope: 'email' }))
 
 app.get('/auth/facebook/callback', passport.authenticate('facebook', {
@@ -90,6 +96,14 @@ function ensureAuth (req, res, next) {
 
   res.status(401).send({ error: 'not authenticated' })
 }
+
+app.get('/whoami', (req, res) => {
+  if (req.isAuthenticated()) {
+    res.json(req.user)
+  } else {
+    res.send([])
+  }
+})
 
 app.get('/api/pictures', (req, res) => {
   var pictures = [
@@ -175,11 +189,11 @@ app.get('/api/user/:username', (req, res) => {
   res.send(user)
 })
 
-app.get('/:username', (req, res) => {
+app.get('/user/:username', (req, res) => {
   res.render('index', { title: `${req.params.username} en Platzigram` })
 })
 
-app.get('/:username/:id', (req, res) => {
+app.get('/user/:username/:id', (req, res) => {
   res.render('index', { title: `${req.params.username} en Platzigram` })
 })
 

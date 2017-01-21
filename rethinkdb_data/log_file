@@ -461,3 +461,24 @@
 2017-01-16T11:59:49.021912355 2.088920s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 15. Latest log index is 43.
 2017-01-16T11:59:49.258047128 2.325055s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Starting a new Raft election for term 12.
 2017-01-16T11:59:49.321925997 2.388934s info: Table ea746e80-1d91-4885-9c73-ac9751358819: This server is Raft leader for term 12. Latest log index is 36.
+2017-01-20T19:07:45.043535534 2.829616s notice: Running rethinkdb 2.3.5~0xenial (GCC 5.3.1)...
+2017-01-20T19:07:45.045798087 2.831881s notice: Running on Linux 4.4.0-59-generic x86_64
+2017-01-20T19:07:45.045860397 2.831941s notice: Loading data from directory /home/rr1n/javascript-cursos/platzigram/rethinkdb_data
+2017-01-20T19:07:45.245165479 3.031246s info: Automatically using cache size of 2641 MB
+2017-01-20T19:07:45.246323167 3.032404s notice: Listening for intracluster connections on port 29015
+2017-01-20T19:07:45.529125618 3.315207s notice: Listening for client driver connections on port 28015
+2017-01-20T19:07:45.529324556 3.315405s notice: Listening for administrative HTTP connections on port 8080
+2017-01-20T19:07:45.529334979 3.315415s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-20T19:07:45.529336300 3.315417s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-20T19:07:45.529337301 3.315418s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-01-20T19:07:45.529338514 3.315419s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-01-20T19:07:45.529339673 3.315420s notice: Server ready, "bhole_c1m" 41cfe4b4-83c0-4903-87f9-926591dd0688
+2017-01-20T19:07:46.561104973 4.347186s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: Starting a new Raft election for term 16.
+2017-01-20T19:07:46.597579116 4.383660s info: Table 6b8e0061-8666-4c0e-8d83-62c76dee2d98: This server is Raft leader for term 16. Latest log index is 46.
+2017-01-20T19:07:46.718124469 4.504205s info: Table ea746e80-1d91-4885-9c73-ac9751358819: Starting a new Raft election for term 13.
+2017-01-20T19:07:46.753406378 4.539488s info: Table ea746e80-1d91-4885-9c73-ac9751358819: This server is Raft leader for term 13. Latest log index is 39.
+2017-01-20T20:21:54.349424112 4452.135505s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-01-20T20:21:54.349502190 4452.135583s notice: Shutting down client connections...
+2017-01-20T20:21:54.359912367 4452.145994s notice: All client connections closed.
+2017-01-20T20:21:54.359928387 4452.146009s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-01-20T20:21:54.386503758 4452.172585s notice: Storage engine shut down.
